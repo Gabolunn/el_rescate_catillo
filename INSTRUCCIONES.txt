@@ -1,0 +1,70 @@
+===========================================
+   EL RESCATE EN EL CASTILLO
+   Visual Novel - Instrucciones de Juego
+===========================================
+
+📦 CÓMO JUGAR (MUY FÁCIL):
+
+1. Descomprime/Extrae todos los archivos de esta carpeta
+2. Busca el archivo "index.html"
+3. Haz DOBLE CLIC en "index.html"
+4. ¡El juego se abrirá automáticamente en tu navegador!
+
+¡Eso es todo! No necesitas instalar nada.
+
+
+⚠️ SI NO FUNCIONA:
+------------------
+Prueba abrir "index.html" con tu navegador favorito:
+- Click derecho en "index.html"
+- Selecciona "Abrir con..."
+- Elige: Google Chrome, Firefox, Microsoft Edge o Safari
+
+
+ALTERNATIVA (Si las imágenes no cargan):
+-----------------------------------------
+Si el juego abre pero no ves las imágenes, puedes usar:
+https://www.liveserver.app/
+1. Ve a esa página web
+2. Arrastra toda la carpeta del juego
+3. Se abrirá funcionando al 100%
+
+
+🎮 CONTROLES:
+- Click en opciones para tomar decisiones
+- Botón "Continuar" para avanzar el diálogo
+- Barra de menú superior para acceder a opciones
+
+💾 GUARDADO:
+- El juego guarda automáticamente tu progreso
+- Usa el botón 💾 para guardar manualmente
+
+🎯 CARACTERÍSTICAS:
+- 108+ escenas narrativas
+- Sistema RPG de stats (Valentía, Ingenio, Romance, Honor)
+- 5 combates épicos con sistema de turnos
+- Múltiples finales según tus decisiones
+- Sistema de logros
+- Galería de imágenes
+- Inventario y objetos
+
+⚔️ COMBATE:
+- Usa diferentes ataques según tus stats
+- Defiéndete para reducir daño
+- Usa objetos del inventario
+- Cada enemigo tiene puntos débiles
+
+📱 REQUISITOS:
+- Navegador web moderno (Chrome, Firefox, Edge)
+- JavaScript habilitado
+- Resolución mínima: 1280x720
+
+🐛 SOLUCIÓN DE PROBLEMAS:
+- Si las imágenes no cargan: usa el método del servidor local
+- Si no guarda el progreso: verifica que el navegador permita cookies/localStorage
+- Si hay bugs: recarga la página (F5)
+
+==========================================
+Desarrollado con ❤️ 
+Visual Novel Engine personalizado
+==========================================

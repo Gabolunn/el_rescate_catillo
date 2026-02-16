@@ -1,0 +1,2310 @@
+﻿{
+  "gameTitle": "El Rescate en el Castillo",
+  "gameVersion": "1.0.0",
+  "initialScene": "prologo_01",
+  "initialStats": {
+    "valentia": 0,
+    "ingenio": 0,
+    "romance": 0,
+    "honor": 0
+  },
+  "scenes": {
+    "prologo_01": {
+      "id": "prologo_01",
+      "bg": "bg_castle_entrance.jpg",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "La noche ha caído como un manto de terciopelo negro sobre el Castillo Oscuro. Las murallas de piedra milenaria se alzan imponentes y amenazantes contra el cielo estrellado, como gigantes dormidos que guardan secretos antiguos. Gabriel, caballero veterano del reino y portador del emblema del León Dorado, se encuentra de pie ante las enormes puertas de hierro forjado. Sus botas están cubiertas de barro y polvo del camino. Ha cabalgado sin descanso durante cinco días y cinco noches, atravesando bosques oscuros, valles desolados y montañas traicioneras. El viento frío de la medianoche azota su capa gastada, pero su determinación arde con más fuerza que cualquier hoguera. Esta noche, todo termina... o todo comienza.",
+      "choices": [],
+      "effects": {},
+      "next": "prologo_02"
+    },
+    "prologo_02": {
+      "id": "prologo_02",
+      "bg": "bg_castle_entrance.jpg",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "La princesa Allison... mi deber, mi responsabilidad, y si soy honesto conmigo mismo, quien ocupa cada uno de mis pensamientos... está cautiva en algún lugar detrás de estos muros malditos. Han pasado tres semanas desde que recibí la carta con el sello roto, manchada de sangre, informándome de su captura. Tres semanas en las que el reino entero ha caído en un silencio sepulcral de miedo. Los rumores hablan de criaturas oscuras, de magia antigua, de guardianes que no conocen la piedad. No me importa. No importa cuántas bestias me esperen dentro, ni cuántos demonios guarden estas torres, ni si debo enfrentarme a la muerte misma... la encontraré. Debo encontrarla. Porque un caballero que abandona a su princesa no merece ese título... y porque sin ella, el reino no tiene futuro.",
+      "choices": [],
+      "effects": {},
+      "next": "prologo_03"
+    },
+    "prologo_03": {
+      "id": "prologo_03",
+      "bg": "bg_castle_entrance.jpg",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Las masivas puertas de hierro, decoradas con gárgolas retorcidas y runas que parecen pulsar con luz propia, están levemente entornadas. Es casi como si alguien... o algo... lo estuviera esperando. Invitándolo a entrar. El silencio es absoluto, roto solo por el ulular distante del viento entre las almenas. Gabriel siente el peso de su espada en el costado y la frialdad del acero bajo sus guantes de cuero. Este es el momento. La primera de muchas decisiones que determinarán no solo su destino, sino el de Allison. ¿Cómo debe proceder? ¿Con la cautela de un cazador que acecha a su presa? ¿O con la fiereza de un guerrero que no teme a nada ni a nadie?",
+      "choices": [
+        {
+          "label": "Entrar sigilosamente",
+          "effects": { "ingenio": 1 },
+          "next": "prologo_sigilo"
+        },
+        {
+          "label": "Entrar con determinación",
+          "effects": { "valentia": 1 },
+          "next": "prologo_frontal"
+        }
+      ],
+      "effects": {},
+      "next": null
+    },
+    "prologo_sigilo": {
+      "id": "prologo_sigilo",
+      "bg": "bg_castle_interior.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel respira hondo, conteniendo el aire en sus pulmones, y se desliza entre las sombras como un espectro. Sus años de entrenamiento en las artes del sigilo cobran vida ahora. Cada paso es medido, calculado con precisión quirúrgica. Evita las piedras sueltas del suelo, se pega a las paredes cubiertas de musgo húmedo, controla hasta el susurro de su respiración. El castillo parece vacío, abandonado incluso, pero hay algo en el aire... una tensión eléctrica, casi tangible, como el momento antes de que estalle una tormenta. Es la sensación de estar siendo observado por ojos invisibles. Los candelabros de las paredes están apagados, pero extrañas luces azuladas parpadean en los pasillos distantes. Gabriel sabe que no está solo aquí. El silencio miente. Y en un lugar como este, el silencio es más peligroso que cualquier rugido.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_01"
+    },
+    "prologo_frontal": {
+      "id": "prologo_frontal",
+      "bg": "bg_castle_interior.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel planta sus pies firmemente en el suelo, agarra la empuñadura de su espada con la mano izquierda para darle coraje, y empuja las puertas con toda la fuerza de sus brazos. El sonido es ensordecedor: un gemido metálico profundo que resuena como el lamento de mil almas, reverberando en los pasillos oscuros del castillo y anunciando su llegada a cualquier cosa que habite en las sombras. Las puertas se abren de par en par con un estruendo que hace temblar el suelo bajo sus pies. No hay vuelta atrás. No habrá sigilo, no habrá subterfugios. Esta noche, el Castillo Oscuro sabrá que Gabriel ha venido, y que no se marchará sin la princesa. Avanza con paso firme, decidido, implacable hacia el interior, mientras ecos de su entrada siguen resonando en las profundidades del castillo como advertencias de una tormenta que se aproxima.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_01"
+    },
+    "acto1_01": {
+      "id": "acto1_01",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Los pasillos descienden hacia las entrañas del castillo. El aire se vuelve frío y húmedo. Las antorchas proyectan sombras danzantes sobre las paredes de piedra.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_02"
+    },
+    "acto1_02": {
+      "id": "acto1_02",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Los calabozos... Si hay guardias, estarán aquí. Puedo escuchar algo moviéndose en la oscuridad. Debo estar preparado para cualquier cosa.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_02b"
+    },
+    "acto1_02b": {
+      "id": "acto1_02b",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel examina el calabozo con ojo experto. Celdas vacías se alinean a ambos lados. En algunas, cadenas oxidadas cuelgan de las paredes. Marcas de garras profundas adornan las puertas de hierro, como si algo hubiera intentado escapar... o entrar.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_chest_01"
+    },
+    "acto1_chest_01": {
+      "id": "acto1_chest_01",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "En un rincón oscuro del calabozo, Gabriel descubre un viejo cofre de madera con herrajes oxidados. Parece que nadie lo ha tocado en décadas.",
+      "choices": [
+        {
+          "label": "Abrir el cofre",
+          "effects": {},
+          "next": "acto1_chest_01_open"
+        },
+        {
+          "label": "Ignorarlo y seguir adelante",
+          "effects": {},
+          "next": "acto1_hound"
+        }
+      ],
+      "effects": {},
+      "next": null
+    },
+    "acto1_chest_01_open": {
+      "id": "acto1_chest_01_open",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "¡Dentro del cofre hay una Poción de Vida! El líquido rojo brilla suavemente en su frasco de cristal. Gabriel la guarda cuidadosamente.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_hound",
+      "chest": {
+        "item": "pocion_vida",
+        "quantity": 2
+      }
+    },
+    "acto1_hound": {
+      "id": "acto1_hound",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "castle_hound",
+          "image": "castle_hound.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "¡Un gruñido feroz rompe el silencio! De las sombras emerge un Sabueso del Castillo, una bestia descomunal con ojos rojos como brasas y colmillos que gotean veneno oscuro. ¡No hay escapatoria, Gabriel debe luchar!",
+      "choices": [],
+      "effects": {},
+      "next": null,
+      "combat": {
+        "enemy": {
+          "name": "Sabueso del Castillo",
+          "sprite": "castle_hound.png",
+          "hp": 45,
+          "atk": 10,
+          "def": 3,
+          "weakStat": "ingenio"
+        },
+        "onWin": "acto1_post_hound",
+        "onLose": "death_screen"
+      }
+    },
+    "acto1_post_hound": {
+      "id": "acto1_post_hound",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Eso estuvo cerca... esas bestias son feroces. Pero si hay sabuesos custodiando este lugar, significa que están protegiendo algo importante.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_post_hound_02"
+    },
+    "acto1_post_hound_02": {
+      "id": "acto1_post_hound_02",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel se limpia la sangre de la espada y continúa avanzando. El calabozo se hace más profundo, más oscuro. El silencio vuelve a apoderarse del lugar, aunque Gabriel sabe que es engañoso.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_03"
+    },
+    "acto1_03": {
+      "id": "acto1_03",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "guardian",
+          "image": "armored_guardian.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Un sonido metálico detiene a Gabriel en seco. De las sombras emerge una imponente figura blindada, cubierta de pies a cabeza en una armadura negra con grabados arcanos que brillan con un fulgor rojizo. Es el Guardian Blindado, centinela eterno de los calabozos.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_04"
+    },
+    "acto1_04": {
+      "id": "acto1_04",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "guardian",
+          "image": "armored_guardian.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Guardian Blindado",
+      "text": "...Alto... Nadie... pasa...",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_05"
+    },
+    "acto1_05": {
+      "id": "acto1_05",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "guardian",
+          "image": "armored_guardian.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel evalúa la situación. El Guardian Blindado bloquea el único paso hacia adelante. Debe actuar.",
+      "choices": [
+        {
+          "label": "¡Usar mi espada de plata!",
+          "effects": { "valentia": 1 },
+          "next": "acto1_accion"
+        },
+        {
+          "label": "Intentar sobornarlo con un secreto del castillo",
+          "effects": { "ingenio": 1 },
+          "next": "acto1_ingenio"
+        },
+        {
+          "label": "Nada me detendrá para ver a la princesa Allison",
+          "effects": { "honor": 1 },
+          "next": "acto1_determinacion"
+        }
+      ],
+      "effects": {},
+      "next": null
+    },
+    "acto1_accion": {
+      "id": "acto1_accion",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel desenvaina su espada de plata con un movimiento fluido. El metal brilla con luz propia en la oscuridad. El Guardian retrocede un paso, pero levanta su alabarda en posición de combate.",
+      "choices": [],
+      "effects": {},
+      "next": null,
+      "combat": {
+        "enemy": {
+          "name": "Guardian Blindado",
+          "sprite": "armored_guardian.png",
+          "hp": 65,
+          "atk": 12,
+          "def": 6,
+          "weakStat": "valentia"
+        },
+        "onWin": "acto1_accion_02",
+        "onLose": "death_screen"
+      }
+    },
+    "acto1_accion_02": {
+      "id": "acto1_accion_02",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "¡Has caído, guardian! Apártate de mi camino.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_post_guardian"
+    },
+    "acto1_ingenio": {
+      "id": "acto1_ingenio",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "guardian",
+          "image": "armored_guardian.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Escucha... Sé que este castillo tiene un pasadizo secreto en la sala del trono. Si me dejas pasar, ese secreto morirá conmigo.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_ingenio_02"
+    },
+    "acto1_ingenio_02": {
+      "id": "acto1_ingenio_02",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "guardian",
+          "image": "armored_guardian.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Guardian Blindado",
+      "text": "...Pasadizo... no sabía... Está bien... pasa... pero yo... no vi nada...",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_post_guardian"
+    },
+    "acto1_determinacion": {
+      "id": "acto1_determinacion",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "guardian",
+          "image": "armored_guardian.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "He jurado proteger a la princesa Allison con mi vida. He cruzado montañas y desiertos. Ni la muerte misma me detendrá. Así que... ¿vas a apartarte?",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_determinacion_02"
+    },
+    "acto1_determinacion_02": {
+      "id": "acto1_determinacion_02",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "guardian",
+          "image": "armored_guardian.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "El Guardian observa la determinación en los ojos del caballero. Algo en su mirada cambia. Lentamente, baja su arma y se hace a un lado.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_post_guardian"
+    },
+    "acto1_post_guardian": {
+      "id": "acto1_post_guardian",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel avanza por el pasillo de los calabozos. El Guardian Blindado queda atrás, inmóvil como una estatua. El camino está despejado... por ahora.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_post_guardian_02"
+    },
+    "acto1_post_guardian_02": {
+      "id": "acto1_post_guardian_02",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Ya he superado dos guardianes de este castillo. Allison lleva semanas aquí sola... No puedo imaginar lo que habrá tenido que soportar. Debo darme prisa.",
+      "choices": [],
+      "effects": {},
+      "next": "acto1_micro_01"
+    },
+    "acto1_micro_01": {
+      "id": "acto1_micro_01",
+      "bg": "bg_dungeon_cell.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Mientras camina, Gabriel nota una celda entreabierta. Dentro, hay una pequeña nota sobre una mesa de madera podrida.",
+      "choices": [
+        {
+          "label": "Leer la nota",
+          "effects": { "romance": 1 },
+          "next": "acto1_micro_leer"
+        },
+        {
+          "label": "Seguir adelante sin distracciones",
+          "effects": {},
+          "next": "acto2_01"
+        }
+      ],
+      "effects": {},
+      "next": null
+    },
+    "acto1_micro_leer": {
+      "id": "acto1_micro_leer",
+      "bg": "bg_dungeon_cell.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "\"Gabriel... si lees esto... sigue adelante. No te detengas por nada. Confío en ti.\" ...Es la letra de Allison. Está viva.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_01"
+    },
+    "acto2_01": {
+      "id": "acto2_01",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel deja atrás los calabozos. Ante él se alza una escalera de caracol tallada directamente en la roca. Marcas de antorchas antiguas revelan que alguien ha subido recientemente.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_01b"
+    },
+    "acto2_01b": {
+      "id": "acto2_01b",
+      "bg": "bg_tower_stairs.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "La torre... Allí es donde la guardan. Puedo sentirlo. Cada peldaño me acerca más a ella.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_01c"
+    },
+    "acto2_01c": {
+      "id": "acto2_01c",
+      "bg": "bg_tower_stairs.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Las escaleras ascienden en espiral, cada paso es más estrecho que el anterior. El aire se vuelve gélido. Una oscuridad antinatural envuelve los pasillos, como si la luz misma temiera avanzar.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_chest_01"
+    },
+    "acto2_chest_01": {
+      "id": "acto2_chest_01",
+      "bg": "bg_tower_stairs.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "A mitad de las escaleras, Gabriel encuentra un cofre ornamentado incrustado en la pared. Los grabados arcanos en su superficie brillan tenuemente.",
+      "choices": [
+        {
+          "label": "Abrir el cofre misterioso",
+          "effects": {},
+          "next": "acto2_chest_01_open"
+        },
+        {
+          "label": "No tocar nada mágico, seguir subiendo",
+          "effects": {},
+          "next": "acto2_02"
+        }
+      ],
+      "effects": {},
+      "next": null
+    },
+    "acto2_chest_01_open": {
+      "id": "acto2_chest_01_open",
+      "bg": "bg_tower_stairs.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "¡El cofre contiene una Poción de Fuerza y una Hierba Curativa! La poción emite un brillo dorado intenso. Gabriel siente el poder fluyendo del frasco.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_02",
+      "chest": {
+        "items": [
+          { "item": "pocion_fuerza", "quantity": 1 },
+          { "item": "hierba_curativa", "quantity": 2 }
+        ]
+      }
+    },
+    "acto2_02": {
+      "id": "acto2_02",
+      "bg": "bg_tower_hall.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Este frío... No es natural. Hay una presencia oscura en esta torre. Puedo sentirla.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_03"
+    },
+    "acto2_03": {
+      "id": "acto2_03",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel entra en una vasta cámara. Estandartes desgarrados cuelgan de las paredes. Armaduras vacías flanquean un trono de piedra negra. Y frente al trono, una figura solitaria espera con su espada clavada en el suelo...",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_04"
+    },
+    "acto2_04": {
+      "id": "acto2_04",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Un caballero oscuro. Su armadura negra como la noche absorbe la luz a su alrededor. Sus ojos brillan con un fulgor espectral detrás del yelmo. No es un guerrero cualquiera... es antiguo, poderoso, y emana una autoridad sobrenatural.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_05"
+    },
+    "acto2_05": {
+      "id": "acto2_05",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Caballero Oscuro",
+      "text": "Otro aspirante a héroe... ¿Vienes a morir como los demás, o traes algo diferente?",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_06"
+    },
+    "acto2_06": {
+      "id": "acto2_06",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Busco a la princesa Allison. Déjame pasar.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_07"
+    },
+    "acto2_07": {
+      "id": "acto2_07",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Caballero Oscuro",
+      "text": "¿Rescatar a la princesa? Ingenuo. Este castillo está bajo MI protección. Nadie pasa sin demostrar que es digno. Y hasta ahora... nadie lo ha sido.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_08"
+    },
+    "acto2_08": {
+      "id": "acto2_08",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "El Caballero Oscuro arranca su espada del suelo con un movimiento fluido. La hoja emite un zumbido siniestro. Gabriel debe decidir cómo enfrentar esta amenaza.",
+      "choices": [
+        {
+          "label": "Desafiar al Caballero Oscuro al combate",
+          "effects": { "valentia": 1 },
+          "next": "acto2_combate"
+        },
+        {
+          "label": "Ofrecer resolver el acertijo que lo mantiene prisionero",
+          "effects": { "ingenio": 1 },
+          "next": "acto2_acertijo"
+        },
+        {
+          "label": "Apelar a la soledad del Caballero Oscuro",
+          "effects": { "honor": 1 },
+          "next": "acto2_empatia"
+        }
+      ],
+      "effects": {},
+      "next": null
+    },
+    "acto2_combate": {
+      "id": "acto2_combate",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Si el combate es el precio, lo pagaré. Desenvaino mi espada. No retrocederé.",
+      "choices": [],
+      "effects": {},
+      "next": null,
+      "combat": {
+        "enemy": {
+          "name": "Caballero Oscuro",
+          "sprite": "dark_knight.png",
+          "hp": 100,
+          "atk": 16,
+          "def": 8,
+          "weakStat": "valentia"
+        },
+        "onWin": "acto2_combate_02",
+        "onLose": "death_screen"
+      }
+    },
+    "acto2_combate_02": {
+      "id": "acto2_combate_02",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Caballero Oscuro",
+      "text": "Impresionante... Hacía siglos que nadie me hacía retroceder. Tu valentía es genuina, caballero. Tienes el derecho de paso. Pero recuerda... la fuerza sin propósito es solo destrucción.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_paso"
+    },
+    "acto2_acertijo": {
+      "id": "acto2_acertijo",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Esperabas que luchara, ¿verdad? Pero veo algo más en tus ojos. No eres solo un guardián... eres un prisionero de tu propio deber. Conozco esa carga.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_acertijo_02"
+    },
+    "acto2_acertijo_02": {
+      "id": "acto2_acertijo_02",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Caballero Oscuro",
+      "text": "Perceptivo... Muy bien. Mi maldición es simple: estoy condenado a custodiar este lugar hasta que alguien entienda que el verdadero enemigo no soy yo. Y tú... lo comprendes. Pasa.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_paso"
+    },
+    "acto2_empatia": {
+      "id": "acto2_empatia",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Has estado solo aquí durante siglos, ¿verdad? Guardando este castillo vacío, sin nadie que reconozca tu sacrificio. Conozco esa soledad, caballero.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_empatia_02"
+    },
+    "acto2_empatia_02": {
+      "id": "acto2_empatia_02",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "dark_knight",
+          "image": "dark_knight.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Caballero Oscuro",
+      "text": "...Siglos, sí. Nadie me había visto como algo más que un obstáculo. Ve, caballero. Encuentra a tu princesa. Y cuando salgan de aquí... llévense también mi bendición.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_paso"
+    },
+    "acto2_paso": {
+      "id": "acto2_paso",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "El Caballero Oscuro envaina su espada y se aparta del trono, abriendo el camino hacia la escalera que asciende a la torre más alta.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_paso_02"
+    },
+    "acto2_paso_02": {
+      "id": "acto2_paso_02",
+      "bg": "bg_dragon_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Gracias, caballero. Tu soledad terminará algún día... te lo prometo.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_paso_03"
+    },
+    "acto2_paso_03": {
+      "id": "acto2_paso_03",
+      "bg": "bg_tower_stairs.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel sube las últimas escaleras. El castillo parece más silencioso aquí arriba, como si incluso las sombras respetaran la cercanía de la princesa. Su corazón late con fuerza, una mezcla de anticipación y temor.",
+      "choices": [],
+      "effects": {},
+      "next": "acto2_micro_01"
+    },
+    "acto2_micro_01": {
+      "id": "acto2_micro_01",
+      "bg": "bg_tower_stairs.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "En las escaleras, Gabriel encuentra una armadura antigua colgada en la pared. Tiene grabado un escudo familiar.",
+      "choices": [
+        {
+          "label": "Tomar el escudo como recuerdo de honor",
+          "effects": { "honor": 1 },
+          "next": "acto2_micro_escudo"
+        },
+        {
+          "label": "Dejarlo en su lugar",
+          "effects": {},
+          "next": "acto3_01"
+        }
+      ],
+      "effects": {},
+      "next": null
+    },
+    "acto2_micro_escudo": {
+      "id": "acto2_micro_escudo",
+      "bg": "bg_tower_stairs.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Este escudo perteneció a un caballero honorable. Llevaré su legado conmigo.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_01"
+    },
+    "acto3_01": {
+      "id": "acto3_01",
+      "bg": "bg_tower_top.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Finalmente, Gabriel alcanza la cima de la torre. Una puerta de madera tallada se alza frente a él. Luz tenue se filtra por debajo.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_02"
+    },
+    "acto3_02": {
+      "id": "acto3_02",
+      "bg": "bg_tower_top.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "center"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Allison... estoy aquí.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_03"
+    },
+    "acto3_03": {
+      "id": "acto3_03",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel empuja la puerta. La cámara es amplia, amueblada con elegancia pero claramente una prisión. Allison está junto a una mesa, estudiando un mapa antiguo del castillo.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_04"
+    },
+    "acto3_04": {
+      "id": "acto3_04",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "¿Gabriel? ¿Eres realmente tú?",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_05"
+    },
+    "acto3_05": {
+      "id": "acto3_05",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Sí, Allison. He venido a sacarte de aquí.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_06"
+    },
+    "acto3_06": {
+      "id": "acto3_06",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Llevaba semanas preparándome para escapar por mi cuenta. Pero... me alegra que estés aquí. He estudiado las rutas de escape. Tenemos que actuar rápido.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_07"
+    },
+    "acto3_07": {
+      "id": "acto3_07",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Pero antes... Gabriel, ¿por qué viniste? Era peligroso. Pudiste morir en el camino.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_08"
+    },
+    "acto3_08": {
+      "id": "acto3_08",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Una pregunta directa que merece una respuesta sincera.",
+      "choices": [
+        {
+          "label": "Es mi deber como caballero protegerte",
+          "effects": { "honor": 1 },
+          "next": "acto3_deber"
+        },
+        {
+          "label": "No podía dejarte sola aquí",
+          "effects": { "romance": 1 },
+          "next": "acto3_corazon"
+        },
+        {
+          "label": "Porque confías en mí, y no fallaré",
+          "effects": { "valentia": 1 },
+          "next": "acto3_confianza"
+        }
+      ],
+      "effects": {},
+      "next": null
+    },
+    "acto3_deber": {
+      "id": "acto3_deber",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Es mi deber como caballero protegerte, Allison. Hace años, juré servir al reino y a la familia real. Ese juramento no es solo palabras.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_deber_02"
+    },
+    "acto3_deber_02": {
+      "id": "acto3_deber_02",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Tu honor siempre te ha definido, Gabriel. Es uno de los rasgos que más admiro en ti.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_escape"
+    },
+    "acto3_corazon": {
+      "id": "acto3_corazon",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "No podía dejarte sola aquí, Allison. Cada día sin saber si estabas bien era insoportable. No vine solo como tu caballero... vine porque me importas.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_corazon_02"
+    },
+    "acto3_corazon_02": {
+      "id": "acto3_corazon_02",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Gabriel... yo también pensé en ti cada día. Saber que llegarías me dio fuerzas para resistir.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_escape"
+    },
+    "acto3_confianza": {
+      "id": "acto3_confianza",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Porque confías en mí, Allison. Depositaste esa confianza en mí, y no voy a fallar. Nunca.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_confianza_02"
+    },
+    "acto3_confianza_02": {
+      "id": "acto3_confianza_02",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Y yo confiaré en ti hasta el final. Ahora, salgamos de aquí juntos.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_escape"
+    },
+    "acto3_escape": {
+      "id": "acto3_escape",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Hay un pasadizo oculto detrás de esa estantería. Lleva directamente fuera del castillo. ¿Listo?",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_escape_02"
+    },
+    "acto3_escape_02": {
+      "id": "acto3_escape_02",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Listo. Quédate detrás de mí y no te separes. Si nos encontramos con más guardias, yo me encargaré.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_escape_03"
+    },
+    "acto3_escape_03": {
+      "id": "acto3_escape_03",
+      "bg": "bg_secret_passage.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Gabriel empuja la estantería revelando un pasadizo oscuro y estrecho. El aire frío y húmedo del túnel les golpea el rostro. El camino hacia la libertad se extiende ante ellos, pero no será fácil.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_chest_01"
+    },
+    "acto3_chest_01": {
+      "id": "acto3_chest_01",
+      "bg": "bg_allison_chamber.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "¡Espera! También encontré esto escondido bajo las tablas del piso. Te servirá más a ti que a mí.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_escape_combat",
+      "chest": {
+        "items": [
+          { "item": "pocion_vida", "quantity": 2 },
+          { "item": "escudo_magico", "quantity": 1 }
+        ]
+      }
+    },
+    "acto3_escape_combat": {
+      "id": "acto3_escape_combat",
+      "bg": "bg_secret_passage.png",
+      "sprites": [
+        {
+          "character": "castle_hound",
+          "image": "castle_hound.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "¡Al entrar al pasadizo, un segundo Sabueso del Castillo los intercepta! Es más grande y feroz que el anterior. Gabriel se interpone entre la bestia y Allison. ¡Debe protegerla!",
+      "choices": [],
+      "effects": {},
+      "next": null,
+      "combat": {
+        "enemy": {
+          "name": "Sabueso Alfa",
+          "sprite": "castle_hound.png",
+          "hp": 55,
+          "atk": 14,
+          "def": 4,
+          "weakStat": "honor"
+        },
+        "onWin": "acto3_post_hound",
+        "onLose": "death_screen"
+      }
+    },
+    "acto3_post_hound": {
+      "id": "acto3_post_hound",
+      "bg": "bg_secret_passage.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "¡Estás herido! Gabriel, ¿puedes continuar?",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_post_hound_02"
+    },
+    "acto3_post_hound_02": {
+      "id": "acto3_post_hound_02",
+      "bg": "bg_secret_passage.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "No es nada. He soportado cosas peores. Sigamos, antes de que vengan más.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_escape_guardian"
+    },
+    "acto3_escape_guardian": {
+      "id": "acto3_escape_guardian",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "guardian",
+          "image": "armored_guardian.png",
+          "position": "right"
+        },
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "¡El pasadizo les lleva de vuelta a los calabozos! Y allí, un segundo Guardian Blindado les bloquea la salida. Este parece aún más poderoso que el primero. Sus grabados arcanos brillan con intensidad.",
+      "choices": [],
+      "effects": {},
+      "next": null,
+      "combat": {
+        "enemy": {
+          "name": "Guardian Blindado Elite",
+          "sprite": "armored_guardian.png",
+          "hp": 80,
+          "atk": 15,
+          "def": 7,
+          "weakStat": "ingenio"
+        },
+        "onWin": "acto3_escape_guardian_02",
+        "onLose": "death_screen"
+      }
+    },
+    "acto3_escape_guardian_02": {
+      "id": "acto3_escape_guardian_02",
+      "bg": "bg_dungeon.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "¡Increíble, Gabriel! No sabía que fueras tan fuerte. ¡La salida está cerca, puedo sentir el aire fresco!",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_micro_01"
+    },
+    "acto3_micro_01": {
+      "id": "acto3_micro_01",
+      "bg": "bg_secret_passage.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "El pasadizo se estrecha. Gabriel y Allison caminan uno al lado del otro, sus hombros rozándose en la oscuridad. Solo la tenue luz al final del túnel les guía.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_micro_01b"
+    },
+    "acto3_micro_01b": {
+      "id": "acto3_micro_01b",
+      "bg": "bg_secret_passage.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "De pronto, Allison se detiene. Mira a Gabriel con una expresión que mezcla gratitud y algo más profundo.",
+      "choices": [
+        {
+          "label": "¿Todo bien, Allison?",
+          "effects": { "romance": 1 },
+          "next": "acto3_micro_romance"
+        },
+        {
+          "label": "Estamos cerca. Sigamos.",
+          "effects": {},
+          "next": "acto3_exit_tunnel"
+        }
+      ],
+      "effects": {},
+      "next": null
+    },
+    "acto3_micro_romance": {
+      "id": "acto3_micro_romance",
+      "bg": "bg_secret_passage.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Sí... solo quería decir gracias. Por todo lo que has hecho. No solo por rescatarme, sino por arriesgar tu vida una y otra vez. Eso significa más de lo que las palabras pueden expresar.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_micro_romance_02"
+    },
+    "acto3_micro_romance_02": {
+      "id": "acto3_micro_romance_02",
+      "bg": "bg_secret_passage.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "No tienes que agradecerme, Allison. Lo haría mil veces más. Ahora vamos, la libertad nos espera.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_exit_tunnel"
+    },
+    "acto3_exit_tunnel": {
+      "id": "acto3_exit_tunnel",
+      "bg": "bg_secret_passage.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "La luz al final del túnel se hace más intensa. El aire cambia, trayendo consigo el aroma de los árboles y la tierra húmeda. Están cerca de la salida del castillo.",
+      "choices": [],
+      "effects": {},
+      "next": "acto3_exit_tunnel_02"
+    },
+    "acto3_exit_tunnel_02": {
+      "id": "acto3_exit_tunnel_02",
+      "bg": "bg_forest_exit.jpg",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "¡El bosque! ¡Lo logramos, Gabriel! ¡Somos libres!",
+      "choices": [],
+      "effects": {},
+      "next": "check_bonus"
+    },
+    "check_bonus": {
+      "id": "check_bonus",
+      "bg": "bg_forest_exit.jpg",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Mira atrás, Allison. El castillo se alza a lo lejos, imponente bajo la luz de la luna. Es difícil creer que hace apenas unas horas estábamos atrapados entre sus muros.",
+      "choices": [],
+      "effects": {},
+      "next": "check_bonus_02"
+    },
+    "check_bonus_02": {
+      "id": "check_bonus_02",
+      "bg": "bg_forest_exit.jpg",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Cada paso que damos nos aleja más de esa pesadilla. Pero los recuerdos... las decisiones que tomamos ahí dentro nos acompañarán para siempre.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_decision"
+    },
+    "bonus_scene": {
+      "id": "bonus_scene",
+      "bg": "bg_garden.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_alert.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "ESCENA BONUS DESBLOQUEADA: Mientras caminan por el bosque, un sendero oculto entre los árboles llama su atención. Las piedras del camino están cubiertas de musgo luminiscente que brilla con un suave tono azulado.",
+      "choices": [],
+      "effects": {},
+      "next": "bonus_scene_01b"
+    },
+    "bonus_scene_01b": {
+      "id": "bonus_scene_01b",
+      "bg": "bg_garden.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Gabriel, mira... Este camino parece antiguo. Mi madre solía contarme historias sobre los jardines secretos del castillo. Decía que los constructores originales crearon un santuario oculto.",
+      "choices": [],
+      "effects": {},
+      "next": "bonus_scene_01c"
+    },
+    "bonus_scene_01c": {
+      "id": "bonus_scene_01c",
+      "bg": "bg_garden.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "¿Un santuario? Después de todo lo que hemos visto esta noche, ya nada me sorprende. ¿Quieres explorarlo?",
+      "choices": [
+        {
+          "text": "Sigamos el sendero luminoso",
+          "next": "bonus_scene_02"
+        },
+        {
+          "text": "Solo un vistazo rápido",
+          "next": "bonus_scene_02"
+        }
+      ],
+      "effects": {}
+    },
+    "bonus_scene_02": {
+      "id": "bonus_scene_02",
+      "bg": "bg_garden.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "El sendero los guía a través de un arco de piedra cubierto de enredaderas florecidas. Al cruzar, se encuentran con un jardín que parece pertenecer a otro mundo: fuentes de agua cristalina, flores que brillan como pequeñas estrellas, y una paz que contrasta con todo lo vivido.",
+      "choices": [],
+      "effects": {},
+      "next": "bonus_scene_02b"
+    },
+    "bonus_scene_02b": {
+      "id": "bonus_scene_02b",
+      "bg": "bg_garden.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Es más hermoso de lo que imaginé... Las historias de mi madre eran ciertas. Este lugar fue creado como refugio, un sitio donde los habitantes del castillo podían encontrar paz en tiempos de guerra.",
+      "choices": [],
+      "effects": {},
+      "next": "bonus_scene_03"
+    },
+    "bonus_scene_03": {
+      "id": "bonus_scene_03",
+      "bg": "bg_garden.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Un lugar de paz creado en medio del caos... Qué apropiado que lo encontremos ahora, después de esta noche.",
+      "choices": [],
+      "effects": {},
+      "next": "bonus_scene_04"
+    },
+    "bonus_scene_04": {
+      "id": "bonus_scene_04",
+      "bg": "bg_garden.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Gabriel... ¿sabes? Durante todo el tiempo que estuve encerrada, soñaba con escapar. Pero nunca imaginé que alguien vendría a buscarme. Que tú vendrías.",
+      "choices": [],
+      "effects": { "romance": 1 },
+      "next": "bonus_scene_05"
+    },
+    "bonus_scene_05": {
+      "id": "bonus_scene_05",
+      "bg": "bg_garden.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "No habría podido vivir conmigo mismo si no lo intentaba. Y mírate ahora: aquí estás, bajo las estrellas, libre. Ha valido cada herida, cada riesgo.",
+      "choices": [],
+      "effects": {},
+      "next": "bonus_scene_06"
+    },
+    "bonus_scene_06": {
+      "id": "bonus_scene_06",
+      "bg": "bg_garden.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Las luciérnagas danzan a su alrededor mientras el sonido del agua llena el silencio. Por un momento, el mundo parece detenerse solo para ellos. La noche del rescate se transforma en un recuerdo que ambos guardarán para siempre.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_decision"
+    },
+    "epilogo_decision": {
+      "id": "epilogo_decision",
+      "bg": "bg_forest_exit.jpg",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "El camino bajo las estrellas se extiende ante ellos, lleno de posibilidades. La aventura en el castillo ha terminado, pero la verdadera historia de Gabriel y Allison apenas comienza...",
+      "choices": [],
+      "effects": {},
+      "next": null,
+      "nextLogic": "checkEpilogueType"
+    },
+    "epilogo_epico": {
+      "id": "epilogo_epico",
+      "bg": "bg_kingdom.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "FINAL ÉPICO: La noticia del rescate se extiende como fuego por todo el reino. Gabriel, el caballero que se adentró solo en el castillo oscuro y rescató a la princesa, se convierte en leyenda.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_epico_01b"
+    },
+    "epilogo_epico_01b": {
+      "id": "epilogo_epico_01b",
+      "bg": "bg_kingdom.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "En la Gran Plaza del reino, miles se reúnen para celebrar su regreso. Los trovadores ya componen canciones sobre la valentía de Gabriel, y los niños juegan a recrear sus hazañas.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_epico_02"
+    },
+    "epilogo_epico_02": {
+      "id": "epilogo_epico_02",
+      "bg": "bg_kingdom.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "El reino necesita protectores como tú, Gabriel. Con tu espada y mi liderazgo, juntos seremos invencibles. Te nombro Campeón Real.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_epico_03"
+    },
+    "epilogo_epico_03": {
+      "id": "epilogo_epico_03",
+      "bg": "bg_kingdom.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Acepto este honor con humildad. Mientras respire, ni tú ni este reino conocerán el miedo. Es mi promesa.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_epico_04"
+    },
+    "epilogo_epico_04": {
+      "id": "epilogo_epico_04",
+      "bg": "bg_kingdom.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Y así, la historia de Gabriel y Allison se escribió en los anales del reino. No como un cuento de hadas, sino como la prueba de que el coraje verdadero puede vencer cualquier oscuridad.",
+      "choices": [],
+      "effects": {},
+      "next": "final_universal"
+    },
+    "epilogo_astuto": {
+      "id": "epilogo_astuto",
+      "bg": "bg_library.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_neutral.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "FINAL ASTUTO: Gabriel y Allison no regresan como guerreros victoriosos, sino como estrategas brillantes. Su conocimiento del castillo y sus trampas resulta invaluable para el reino.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_astuto_01b"
+    },
+    "epilogo_astuto_01b": {
+      "id": "epilogo_astuto_01b",
+      "bg": "bg_library.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Gabriel, he estado pensando. Tu forma de resolver cada situación... no con fuerza bruta, sino con ingenio. El reino necesita esa sabiduría. Quiero nombrarte Consejero Real.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_astuto_02"
+    },
+    "epilogo_astuto_02": {
+      "id": "epilogo_astuto_02",
+      "bg": "bg_library.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "La verdadera fuerza no está solo en la espada, sino en la mente. Juntos reformaremos las defensas del reino para que nadie más sufra lo que tú sufriste.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_astuto_03"
+    },
+    "epilogo_astuto_03": {
+      "id": "epilogo_astuto_03",
+      "bg": "bg_library.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Con los planos del castillo y el conocimiento adquirido en su aventura, Gabriel diseña un nuevo sistema de defensa. El reino prospera bajo la guía de dos mentes brillantes, y la paz que construyen dura generaciones.",
+      "choices": [],
+      "effects": {},
+      "next": "final_universal"
+    },
+    "epilogo_intimo": {
+      "id": "epilogo_intimo",
+      "bg": "bg_sunset.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "FINAL ÍNTIMO: Días después del rescate, Gabriel y Allison deciden alejarse de la vida de la corte. El peso de las responsabilidades reales puede esperar; lo que importa ahora es el vínculo que forjaron en la oscuridad del castillo.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_intimo_01b"
+    },
+    "epilogo_intimo_01b": {
+      "id": "epilogo_intimo_01b",
+      "bg": "bg_sunset.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "¿Estás segura de esto, Allison? Podrías volver al trono, reclamar tu lugar en el reino...",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_intimo_02"
+    },
+    "epilogo_intimo_02": {
+      "id": "epilogo_intimo_02",
+      "bg": "bg_sunset.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Un trono es solo una silla, Gabriel. Aquí, contigo, he encontrado lo que realmente buscaba. No un rescate... sino un hogar. Alguien que me vea como soy, no como lo que represento.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_intimo_03"
+    },
+    "epilogo_intimo_03": {
+      "id": "epilogo_intimo_03",
+      "bg": "bg_sunset.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_neutral.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Bajo el atardecer dorado, dos siluetas caminan juntas hacia el horizonte. Su historia no será cantada por trovadores ni escrita en libros de historia, pero será la más real y hermosa de todas.",
+      "choices": [],
+      "effects": {},
+      "next": "final_universal"
+    },
+    "epilogo_honorable": {
+      "id": "epilogo_honorable",
+      "bg": "bg_throne_room.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "FINAL HONORABLE: En la sala del trono, Gabriel se arrodilla ante Allison, ahora restaurada como legítima soberana. La corte entera observa en silencio reverencial.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_honorable_01b"
+    },
+    "epilogo_honorable_01b": {
+      "id": "epilogo_honorable_01b",
+      "bg": "bg_throne_room.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Allison",
+      "text": "Gabriel, caballero de honor inquebrantable. Tu devoción al deber y a lo correcto me inspira. Hoy te nombro Gran Protector del Reino, el rango más alto que puedo otorgar.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_honorable_02"
+    },
+    "epilogo_honorable_02": {
+      "id": "epilogo_honorable_02",
+      "bg": "bg_throne_room.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_determined.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Gabriel",
+      "text": "Serviré al reino hasta mi último aliento. No por la gloria ni por las recompensas, sino porque es lo correcto. Este es mi juramento, ante usted y ante todo el reino.",
+      "choices": [],
+      "effects": {},
+      "next": "epilogo_honorable_03"
+    },
+    "epilogo_honorable_03": {
+      "id": "epilogo_honorable_03",
+      "bg": "bg_throne_room.png",
+      "sprites": [
+        {
+          "character": "gabriel",
+          "image": "gabriel_determined.png",
+          "position": "left"
+        },
+        {
+          "character": "allison",
+          "image": "allison_happy.png",
+          "position": "right"
+        }
+      ],
+      "speaker": "Narrador",
+      "text": "Bajo el liderazgo de la Reina Allison y la protección del Gran Protector Gabriel, el reino entra en una era dorada. Su honor se convierte en el pilar sobre el que se construye un futuro mejor para todos.",
+      "choices": [],
+      "effects": {},
+      "next": "final_universal"
+    },
+    "final_universal": {
+      "id": "final_universal",
+      "bg": "bg_black.jpg",
+      "sprites": [],
+      "speaker": "",
+      "text": "TE AMO POTO",
+      "choices": [],
+      "effects": {},
+      "next": null,
+      "isFinalScreen": true
+    }
+  }
+}

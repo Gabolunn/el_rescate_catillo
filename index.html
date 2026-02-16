@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rescate en el Castillo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de carga inicial -->
+    <div id="loading-screen" class="screen active">
+        <div class="loading-content">
+            <h1 class="game-title">El Rescate en el Castillo</h1>
+            <p class="loading-subtitle">Una aventura de honor y determinación</p>
+            <button id="start-btn" class="btn btn-primary">Comenzar</button>
+            <button id="load-btn" class="btn btn-secondary">Cargar Partida</button>
+        </div>
+    </div>
+
+    <!-- Pantalla principal del juego -->
+    <div id="game-screen" class="screen">
+        <!-- Fondo dinámico -->
+        <div id="background" class="background"></div>
+
+        <!-- Contenedor de sprites/personajes -->
+        <div id="sprites-container" class="sprites-container"></div>
+
+        <!-- Capa de interfaz -->
+        <div class="game-ui">
+            <!-- Panel superior con stats -->
+            <div id="stats-panel" class="stats-panel">
+                <div class="stat-item" data-stat="valentia">
+                    <span class="stat-label">Valentía:</span>
+                    <span id="stat-valentia" class="stat-value">0</span>
+                </div>
+                <div class="stat-item" data-stat="ingenio">
+                    <span class="stat-label">Ingenio:</span>
+                    <span id="stat-ingenio" class="stat-value">0</span>
+                </div>
+                <div class="stat-item" data-stat="romance">
+                    <span class="stat-label">Romance:</span>
+                    <span id="stat-romance" class="stat-value">0</span>
+                </div>
+                <div class="stat-item" data-stat="honor">
+                    <span class="stat-label">Honor:</span>
+                    <span id="stat-honor" class="stat-value">0</span>
+                </div>
+            </div>
+
+            <!-- Indicador de Relación con Allison -->
+            <div id="relationship-bar" class="relationship-bar">
+                <div class="relationship-label">
+                    <span>💕 Vínculo con Allison</span>
+                </div>
+                <div class="relationship-progress">
+                    <div id="relationship-fill" class="relationship-fill"></div>
+                </div>
+            </div>
+
+            <!-- Auto-save Indicator -->
+            <div id="autosave-indicator" class="autosave-indicator">
+                <span class="autosave-icon">💾</span>
+                <span class="autosave-text">Guardando...</span>
+            </div>
+
+            <!-- Caja de diálogo principal -->
+            <div id="dialogue-box" class="dialogue-box">
+                <div id="speaker-name" class="speaker-name"></div>
+                <div id="dialogue-text" class="dialogue-text"></div>
+                
+                <!-- Botón de continuar (cuando no hay choices) -->
+                <button id="continue-btn" class="btn btn-continue">▶ Continuar</button>
+
+                <!-- Contenedor de opciones -->
+                <div id="choices-container" class="choices-container"></div>
+            </div>
+
+            <!-- Botones de control -->
+            <div class="control-buttons">
+                <button id="menu-btn" class="btn btn-control" title="Menú">☰</button>
+                <button id="log-btn" class="btn btn-control" title="Historial">📜</button>
+                <button id="achievements-btn" class="btn btn-control" title="Logros">🏆</button>
+                <button id="gallery-btn" class="btn btn-control" title="Galería">🖼️</button>
+                <button id="inventory-btn" class="btn btn-control" title="Inventario">🎒</button>
+                <button id="save-btn" class="btn btn-control" title="Guardar">💾</button>
+                <button id="settings-btn" class="btn btn-control" title="Opciones">⚙️</button>
+            </div>
+        </div>
+
+        <!-- Quick Time Event Panel -->
+        <div id="qte-panel" class="qte-panel">
+            <div class="qte-content">
+                <div class="qte-instruction">¡Presiona la tecla!</div>
+                <div id="qte-key" class="qte-key"></div>
+                <div id="qte-timer" class="qte-timer">
+                    <div id="qte-timer-fill" class="qte-timer-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HP Bar del jugador (siempre visible en juego) -->
+        <div id="hp-bar" class="hp-bar">
+            <div class="hp-label">❤️ <span id="hp-text">100/100</span></div>
+            <div class="hp-progress">
+                <div id="hp-fill" class="hp-fill"></div>
+            </div>
+        </div>
+
+        <!-- Combat Panel (RPG por turnos) -->
+        <div id="combat-panel" class="combat-panel">
+            <!-- Combat Log (pequeño arriba izquierda) -->
+            <div id="combat-log" class="combat-log">
+                <div id="combat-log-text" class="combat-log-text">¡El combate comienza!</div>
+            </div>
+
+            <!-- Arena de combate -->
+            <div class="combat-scene">
+                <!-- Jugador (izquierda) -->
+                <div class="combat-player">
+                    <div class="player-name">Gabriel</div>
+                    <div class="player-hp-bar">
+                        <div id="player-combat-hp-fill" class="player-combat-hp-fill"></div>
+                    </div>
+                    <div id="player-combat-hp-text" class="player-combat-hp-text">100/100</div>
+                    <div id="player-sprite-container" class="player-sprite-container">
+                        <img id="player-sprite" class="player-sprite" src="" alt="">
+                    </div>
+                </div>
+                <!-- VS -->
+                <div class="combat-vs">⚔️</div>
+                <!-- Enemigo (derecha) -->
+                <div class="combat-enemy">
+                    <div id="enemy-name" class="enemy-name">Enemigo</div>
+                    <div class="enemy-hp-bar">
+                        <div id="enemy-hp-fill" class="enemy-hp-fill"></div>
+                    </div>
+                    <div id="enemy-hp-text" class="enemy-hp-text">100/100</div>
+                    <div id="enemy-sprite-container" class="enemy-sprite-container">
+                        <img id="enemy-sprite" class="enemy-sprite" src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acciones de combate (abajo) -->
+            <div class="combat-bottom">
+                <div id="combat-actions" class="combat-actions">
+                    <button class="combat-btn attack-btn" data-attack="estocada">
+                        <span class="combat-btn-icon">⚔️</span>
+                        <span class="combat-btn-name">Estocada</span>
+                        <span class="combat-btn-stat">VAL</span>
+                    </button>
+                    <button class="combat-btn attack-btn" data-attack="golpe_tactico">
+                        <span class="combat-btn-icon">🧠</span>
+                        <span class="combat-btn-name">Golpe Táctico</span>
+                        <span class="combat-btn-stat">ING</span>
+                    </button>
+                    <button class="combat-btn attack-btn" data-attack="castigo_divino">
+                        <span class="combat-btn-icon">✨</span>
+                        <span class="combat-btn-name">Castigo Divino</span>
+                        <span class="combat-btn-stat">HON</span>
+                    </button>
+                    <button class="combat-btn defend-btn" data-attack="defender">
+                        <span class="combat-btn-icon">🛡️</span>
+                        <span class="combat-btn-name">Defender</span>
+                        <span class="combat-btn-stat">DEF</span>
+                    </button>
+                    <button id="combat-item-btn" class="combat-btn item-btn">
+                        <span class="combat-btn-icon">🎒</span>
+                        <span class="combat-btn-name">Usar Item</span>
+                        <span class="combat-btn-stat" id="item-count">0</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Items submenu -->
+            <div id="combat-items-menu" class="combat-items-menu hidden">
+                <div class="combat-items-header">
+                    <span>🎒 Inventario</span>
+                    <button id="close-items-menu" class="btn-close-small">✕</button>
+                </div>
+                <div id="combat-items-list" class="combat-items-list"></div>
+            </div>
+        </div>
+
+        <!-- Death Screen -->
+        <div id="death-screen" class="death-screen">
+            <div class="death-content">
+                <div class="death-skull">💀</div>
+                <h1 class="death-title">HAS MUERTO</h1>
+                <p class="death-subtitle">La oscuridad te consume...</p>
+                <button id="retry-btn" class="btn btn-primary death-retry-btn">⚔️ Reintentar Combate</button>
+                <button id="death-title-btn" class="btn btn-secondary">🏠 Volver al Título</button>
+            </div>
+        </div>
+
+        <!-- Chest Notification -->
+        <div id="chest-notification" class="chest-notification">
+            <div class="chest-icon">🎁</div>
+            <div id="chest-items" class="chest-items"></div>
+        </div>
+
+        <!-- Particle Container -->
+        <div id="particles-container" class="particles-container"></div>
+
+        <!-- Achievement Notifications -->
+        <div id="achievement-container" class="achievement-container"></div>
+    </div>
+
+    <!-- Panel de menú lateral -->
+    <div id="menu-panel" class="side-panel">
+        <div class="panel-header">
+            <h2>Menú</h2>
+            <button id="close-menu-btn" class="btn-close">✕</button>
+        </div>
+        <div class="panel-content">
+            <button id="menu-save-btn" class="btn btn-menu">Guardar Partida</button>
+            <button id="menu-load-btn" class="btn btn-menu">Cargar Partida</button>
+            <button id="menu-restart-btn" class="btn btn-menu">Reiniciar Historia</button>
+            <button id="menu-title-btn" class="btn btn-menu">Volver al Título</button>
+        </div>
+    </div>
+
+    <!-- Panel de historial de texto -->
+    <div id="log-panel" class="side-panel">
+        <div class="panel-header">
+            <h2>Historial</h2>
+            <button id="close-log-btn" class="btn-close">✕</button>
+        </div>
+        <div class="panel-content">
+            <div id="log-content" class="log-content"></div>
+        </div>
+    </div>
+
+    <!-- Panel de Logros -->
+    <div id="achievements-panel" class="side-panel">
+        <div class="panel-header">
+            <h2>Logros</h2>
+            <button id="close-achievements-btn" class="btn-close">✕</button>
+        </div>
+        <div class="panel-content">
+            <div id="achievements-content" class="achievements-content"></div>
+        </div>
+    </div>
+
+    <!-- Panel de Galería -->
+    <div id="gallery-panel" class="side-panel">
+        <div class="panel-header">
+            <h2>Galería</h2>
+            <button id="close-gallery-btn" class="btn-close">✕</button>
+        </div>
+        <div class="panel-content">
+            <div id="gallery-content" class="gallery-content"></div>
+        </div>
+    </div>
+
+    <!-- Panel de Inventario -->
+    <div id="inventory-panel" class="side-panel">
+        <div class="panel-header">
+            <h2>🎒 Inventario</h2>
+            <button id="close-inventory-btn" class="btn-close">✕</button>
+        </div>
+        <div class="panel-content">
+            <div id="inventory-content" class="inventory-content"></div>
+        </div>
+    </div>
+
+    <!-- Modal de configuración -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Configuración</h2>
+                <button id="close-settings-btn" class="btn-close">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-item">
+                    <label for="text-speed">Velocidad de Texto:</label>
+                    <select id="text-speed" class="setting-select">
+                        <option value="slow">Lenta</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="fast">Rápida</option>
+                        <option value="instant">Instantánea</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="music-volume">Volumen Música:</label>
+                    <input type="range" id="music-volume" min="0" max="100" value="70" class="setting-slider">
+                    <span id="music-volume-value">70%</span>
+                </div>
+                <div class="setting-item">
+                    <label for="sfx-volume">Volumen Efectos:</label>
+                    <input type="range" id="sfx-volume" min="0" max="100" value="80" class="setting-slider">
+                    <span id="sfx-volume-value">80%</span>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="auto-save" checked>
+                        Auto-guardado
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h2 id="confirm-title">Confirmar</h2>
+            </div>
+            <div class="modal-body">
+                <p id="confirm-message"></p>
+                <div class="modal-buttons">
+                    <button id="confirm-yes-btn" class="btn btn-primary">Sí</button>
+                    <button id="confirm-no-btn" class="btn btn-secondary">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay de transición -->
+    <div id="transition-overlay" class="transition-overlay"></div>
+
+    <!-- Audio placeholders (se cargarán dinámicamente) -->
+    <audio id="bgm-audio" loop></audio>
+    <audio id="sfx-audio"></audio>
+
+    <!-- Scripts -->
+    <script src="game.js"></script>
+</body>
+</html>
